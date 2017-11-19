@@ -1,0 +1,22 @@
+version: '3'
+services:
+  example:
+    build: ./example/
+    ports:
+      - "3000:3000"
+  etcdbrowser:
+    image: woosley/etcd-browser
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./etcd-browser/config.yaml:/app/config.yaml
+  etcd:
+    image: quay.io/coreos/etcd
+    command:
+      - /usr/local/bin/etcd
+      - "-advertise-client-urls=http://0.0.0.0:2379"
+      - "-listen-client-urls=http://0.0.0.0:2379"
+    ports:
+      - "2379:2379"
+    environment:
+      - ETCD_CORS=*

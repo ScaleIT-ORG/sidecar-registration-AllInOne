@@ -1,0 +1,21 @@
+{
+  "name": "Example_Sidecar_Registration",
+  "version": "0.0.1",
+  "description": "Example Sidecar Registration",
+  "main": "app.js",
+  "author": {
+    "name": "Kuhno92",
+    "email": ""
+  },
+  "dependencies": {
+    "body-parser": "*",
+    "ejs": "^2.5.1",
+    "express": "3.2.4",
+    "netjet": "^1.1.3",
+    "spdy": "^3.4.4",
+    "stylus": "*"
+  },
+  "scripts": {
+    "start": "node app.js"
+  }
+}
