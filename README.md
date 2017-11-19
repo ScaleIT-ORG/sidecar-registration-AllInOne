@@ -4,7 +4,7 @@ Sidecar Application Registration on ETCD Key/Value Store
 
 This repo shows how to add a simple sidecar application to your Main-application to register at ETCD (Key/Value Store https://coreos.com/etcd/ ) with Name, Icon and a little Description
 
-This Repo also contains the ETCD-Browser container where you can visualize your etcd store at http://localhost:2379
+This Repo also contains the ETCD-Browser container where you can visualize your etcd store at http://localhost:8080
 
 ## How to Use:
 1. Start Containers:
@@ -12,17 +12,19 @@ This Repo also contains the ETCD-Browser container where you can visualize your 
 		- docker-compose build
 		- docker-compose up
 
-2. Check ETCD
+2. Check ETCD/Application
 
-		- Visit http://localhost:2379
+		- Visit http://localhost:8080
 		(You should see an entry called "Example1" with Name, Icon and Desc Values)
+		- Visit http://localhost:3000
+		(You should see a simple webpage from the example application)
 
 3. Verify (Optional)
 	
 		Kill the Example Application and Check ETCD again to verify that the Example Application is not registrated anymore
 		- docker ps  (get container_ID of Example application)
 		- docker stop "container_ID"
-		- Visit http://localhost:2379
+		- Visit http://localhost:8080
 
 ## Explanation
 
