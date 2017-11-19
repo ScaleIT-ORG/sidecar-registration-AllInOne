@@ -6,7 +6,7 @@ This repo shows how to add a simple sidecar application to your Main-application
 
 This Repo also contains the ETCD-Browser container where you can visualize your etcd store at http://localhost:2379
 
-#How to Use:
+## How to Use:
 1. Start Containers:
 
 		- docker-compose build
@@ -24,7 +24,7 @@ This Repo also contains the ETCD-Browser container where you can visualize your 
 		- docker stop "container_ID"
 		- Visit http://localhost:2379
 
-#Explanation
+## Explanation
 
 - docker-compose.yml 
 
