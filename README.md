@@ -1,3 +1,5 @@
+This repository has been depracated in favor of a modular solution. Visit: https://github.com/ScaleIT-ORG/sidecar-registration-example
+
 # sidecar-registration
 Sidecar Application Registration on ETCD Key/Value Store
 
