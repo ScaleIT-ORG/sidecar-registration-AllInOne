@@ -8,6 +8,9 @@ This repo shows how to add a simple sidecar application to your Main-application
 
 This Repo also contains the ETCD-Browser container where you can visualize your etcd store at http://localhost:8080
 
+![Registration Sidecar Architecture Concept](https://github.com/ScaleIT-ORG/sidecar-registration-AllInOne/raw/master/Resources/Documentation/img/architecture.png)
+
+
 ## How to Use:
 1. Start Containers:
 
